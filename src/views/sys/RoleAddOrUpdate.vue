@@ -106,7 +106,6 @@ export default {
       validateFields((err, values) => {
         if (!err) {
           // 将menu树作为参数与表单的参数合并在一起
-          console.log(this.menuChecked + 'roleId:' + this.id)
           Object.assign(values, { menuIdList: this.menuChecked, roleId: this.id })
           // 这里把新增和修改分开进行了处理：因为api中为两个地址
           let promise
@@ -129,6 +128,7 @@ export default {
           })
           this.confirmLoading = false
         }
+        this.confirmLoading = false
       })
     },
     handleCancel () {

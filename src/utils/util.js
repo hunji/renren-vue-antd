@@ -15,6 +15,7 @@ export function treeDataTranslate (data, id = 'id', pid = 'parentId') {
   data = data.map(d => {
     d.title = d.name
     d.key = d.menuId
+    d.value = d.menuId + ''
     return d
   })
   var res = []

@@ -173,6 +173,7 @@ export default {
           })
           this.confirmLoading = false
         }
+        this.confirmLoading = false
       })
     },
     handleCancel () {

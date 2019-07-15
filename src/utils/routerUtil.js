@@ -16,7 +16,8 @@ const constantRouterComponents = {
   monitor: () => import('@/views/dashboard/Monitor'),
   // ...more
   user: () => import('@/views/sys/User'),
-  role: () => import('@/views/sys/Role')
+  role: () => import('@/views/sys/Role'),
+  menu: () => import('@/views/sys/Menu')
 }
 
 // 前端未找到页面路由（固定不用改）
